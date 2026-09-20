@@ -1,6 +1,6 @@
 # Cockpit Preferences — Project README
 
-> **Note de sécurité** : Ce dépôt ne contient aucun identifiant, mot de passe, URL de serveur ou clé API. Ces informations sont à demander directement au laboratoire (Dr. Thomas Weber, thomas.weber@ifi.lmu.de). Ne jamais committer de fichier `.env` ou contenant des credentials.
+> **Security note**: This repository contains no credentials, passwords, server URLs or API keys. All such information must be requested directly from the lab (Dr. Thomas Weber, thomas.weber@ifi.lmu.de). Never commit `.env` files or any file containing credentials.
 
 
 **Research project:** LMU Munich, Chair for Human-Centered Ubiquitous Media  
@@ -46,7 +46,7 @@ A web survey deployed on the LMU lab server that collects pilot preferences:
 - **Phase 4:** Display preferences — for display systems, pilots answer questions about size, grouping, and redundancy
 
 ### Live URL
-`[URL fournie par le laboratoire]`
+`[URL provided by the lab]`
 
 ### Survey credentials (shared with participants)
 - ID: `cockpit2025`
@@ -80,7 +80,7 @@ pm2 restart cockpit-api
 MongoDB on the lab server. To access:
 ```bash
 mongosh --authenticationDatabase "cockpitpreferences" -u "cockpitpreferences" -p
-# password: [demander au laboratoire]
+# password: [request from the lab]
 use cockpitpreferences
 db.responses.find().pretty()
 ```
@@ -88,7 +88,7 @@ db.responses.find().pretty()
 To export survey data:
 ```bash
 mongoexport --authenticationDatabase "cockpitpreferences" \
-  -u "cockpitpreferences" -p "[mot de passe fourni par le laboratoire]" \
+  -u "cockpitpreferences" -p "[password provided by the lab]" \
   --db cockpitpreferences --collection responses \
   --out ~/survey_export.json --jsonArray
 
