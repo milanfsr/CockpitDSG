@@ -1,5 +1,8 @@
 # Cockpit Preferences — Project README
 
+> **Note de sécurité** : Ce dépôt ne contient aucun identifiant, mot de passe, URL de serveur ou clé API. Ces informations sont à demander directement au laboratoire (Dr. Thomas Weber, thomas.weber@ifi.lmu.de). Ne jamais committer de fichier `.env` ou contenant des credentials.
+
+
 **Research project:** LMU Munich, Chair for Human-Centered Ubiquitous Media  
 **Supervised by:** Dr. Thomas Weber, Prof. Dr. Albrecht Schmidt  
 **Contributors:** Milan Fossurier, Isabel Wanderwitz, Philipp Thalhammer, Thomas Weber
@@ -43,7 +46,7 @@ A web survey deployed on the LMU lab server that collects pilot preferences:
 - **Phase 4:** Display preferences — for display systems, pilots answer questions about size, grouping, and redundancy
 
 ### Live URL
-`https://cockpitpreferences.medien.ifi.lmu.de`
+`[URL fournie par le laboratoire]`
 
 ### Survey credentials (shared with participants)
 - ID: `cockpit2025`
@@ -51,7 +54,7 @@ A web survey deployed on the LMU lab server that collects pilot preferences:
 
 ### Server access
 ```bash
-ssh -p YOUR_PORT cockpitpreferences@lmmimed-prjsv23.medien.ifi.lmu.de
+ssh -p YOUR_PORT USERNAME@SERVER_NAME
 ```
 The Express backend runs under PM2:
 ```bash
@@ -65,7 +68,7 @@ pm2 logs cockpit-api     # view logs
 # On your PC, inside cockpit-survey/
 npm install --legacy-peer-deps
 npm run build
-scp -P YOUR_PORT -r dist/ cockpitpreferences@lmmimed-prjsv23.medien.ifi.lmu.de:~/cockpit-frontend/
+scp -P YOUR_PORT -r dist/ USERNAME@SERVER_NAME:~/cockpit-frontend/
 
 # On the server
 rm -rf ~/cockpit-backend/dist
@@ -77,7 +80,7 @@ pm2 restart cockpit-api
 MongoDB on the lab server. To access:
 ```bash
 mongosh --authenticationDatabase "cockpitpreferences" -u "cockpitpreferences" -p
-# password: Af9Hk-.amhFRFSN7-j
+# password: [demander au laboratoire]
 use cockpitpreferences
 db.responses.find().pretty()
 ```
@@ -85,11 +88,11 @@ db.responses.find().pretty()
 To export survey data:
 ```bash
 mongoexport --authenticationDatabase "cockpitpreferences" \
-  -u "cockpitpreferences" -p "Af9Hk-.amhFRFSN7-j" \
+  -u "cockpitpreferences" -p "[mot de passe fourni par le laboratoire]" \
   --db cockpitpreferences --collection responses \
   --out ~/survey_export.json --jsonArray
 
-scp -P YOUR_PORT cockpitpreferences@lmmimed-prjsv23.medien.ifi.lmu.de:~/survey_export.json .
+scp -P YOUR_PORT USERNAME@SERVER_NAME:~/survey_export.json .
 ```
 
 ---
