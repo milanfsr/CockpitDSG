@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa31dd6275f9194a8dc9a40b7f2209f, type: 3}
+  m_Name: pfd
+  m_EditorClassIdentifier: Assembly-CSharp::SystemData
+  systemId: pfd
+  displayName: PFD
+  description: Primary Flight Display - Display flight information, route, heading
+    etc.
+  category: 17
+  defaultWidth: 2
+  defaultHeight: 3
+  resizable: 1
+  minWidth: 1
+  maxWidth: 5
+  minHeight: 1
+  maxHeight: 5
+  icon: {fileID: 0}
+  tileColor: {r: 0.8627452, g: 0.07843138, b: 0.2352941, a: 1}

@@ -1,0 +1,117 @@
+.gdpr-wrap {
+  min-height: 100vh;
+  background: #f5f5f7;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+  font-family: system-ui, sans-serif;
+  box-sizing: border-box;
+}
+
+.gdpr-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5e5e5;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 680px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+.gdpr-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.gdpr-lead {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin: 0 0 1.75rem;
+}
+
+.gdpr-body {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.75rem;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.7;
+  max-height: 360px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+}
+
+.gdpr-body p {
+  margin: 0 0 0.75rem;
+}
+
+.gdpr-section {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4f46e5;
+  margin: 1rem 0 4px;
+}
+
+.gdpr-section:first-child {
+  margin-top: 0;
+}
+
+.gdpr-consent {
+  margin-bottom: 1.5rem;
+}
+
+.gdpr-consent-label {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.gdpr-checkbox {
+  margin-top: 3px;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #4f46e5;
+}
+
+.gdpr-error {
+  font-size: 13px;
+  color: #ef4444;
+  margin: 8px 0 0;
+}
+
+.gdpr-btn {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border-radius: 10px;
+  border: none;
+  background: #1d1d1f;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.gdpr-btn:hover {
+  background: #333;
+}
+
+.gdpr-bullets { padding-left: 1.5rem; font-size: 13px; color: #333; line-height: 1.8; margin: 0.5rem 0 0.75rem; }
+.gdpr-ol { padding-left: 1.5rem; font-size: 13px; color: #333; line-height: 1.8; margin: 0.5rem 0 0.75rem; }
+.gdpr-link { color: #4f46e5; text-decoration: none; }
+.gdpr-link:hover { text-decoration: underline; }
+.gdpr-body p { margin: 0 0 0.75rem; }

@@ -1,0 +1,183 @@
+.zm-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+.zm-header {
+  padding: 0.75rem 0 0.5rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.zm-progress {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 2px;
+}
+
+.zm-system-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.zm-system-desc {
+  font-size: 13px;
+  color: #555;
+}
+
+.zm-svg-area {
+  flex: 1;
+  min-height: 0;
+  padding: 4px 0;
+}
+
+.zm-svg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zm-svg-container svg {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.zm-legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+  border-top: 1px solid #e5e5e5;
+  flex-shrink: 0;
+}
+
+.zm-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  color: #333;
+}
+
+.zm-legend-fixed {
+  color: #999;
+}
+
+.zm-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.15);
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.zm-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 14px;
+  flex-shrink: 0;
+}
+
+.zm-footer-left,
+.zm-footer-right {
+  min-width: 110px;
+}
+
+.zm-footer-right {
+  text-align: right;
+}
+
+.zm-footer-center {
+  flex: 1;
+  text-align: center;
+}
+
+.zm-hint {
+  font-size: 13px;
+  color: #888;
+}
+
+.zm-btn {
+  padding: 9px 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.12s;
+}
+
+.zm-btn:hover {
+  background: #f5f5f5;
+}
+
+.zm-btn-next {
+  background: #1d1d1f;
+  color: #fff;
+  border-color: #1d1d1f;
+}
+
+.zm-btn-next:hover {
+  background: #333;
+}
+
+.zm-btn-back {
+  color: #555;
+}
+
+/* Make SVG cockpit outline paths black for light mode */
+.zm-svg-container #path1,
+.zm-svg-container #path2,
+.zm-svg-container #path3,
+.zm-svg-container #path4,
+.zm-svg-container #path5,
+.zm-svg-container #path6,
+.zm-svg-container #path7,
+.zm-svg-container #path8 {
+  fill: #1d1d1f !important;
+}
+
+.zm-instructions {
+  padding: 12px 16px;
+  background: #f0f4ff;
+  border-radius: 10px;
+  border-left: 4px solid #4f46e5;
+  margin-bottom: 0.5rem;
+  flex-shrink: 0;
+}
+
+.zm-instructions-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4f46e5;
+  margin: 0 0 4px;
+}
+
+.zm-instructions-body {
+  font-size: 13px;
+  color: #444;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.zm-hint-error {
+  color: #ef4444 !important;
+  font-weight: 500;
+}

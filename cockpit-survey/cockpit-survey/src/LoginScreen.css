@@ -1,0 +1,94 @@
+.ls-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f7;
+  font-family: system-ui, sans-serif;
+  padding: 1rem;
+}
+
+.ls-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5e5e5;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+.ls-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.ls-subtitle {
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  margin: 0 0 2rem;
+  line-height: 1.5;
+}
+
+.ls-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ls-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ls-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.ls-input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #ddd;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.ls-input:focus {
+  border-color: #4f46e5;
+}
+
+.ls-error {
+  font-size: 13px;
+  color: #ef4444;
+  margin: 0;
+  text-align: center;
+}
+
+.ls-submit {
+  margin-top: 0.5rem;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #1d1d1f;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.ls-submit:hover:not(:disabled) {
+  background: #333;
+}
+
+.ls-submit:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

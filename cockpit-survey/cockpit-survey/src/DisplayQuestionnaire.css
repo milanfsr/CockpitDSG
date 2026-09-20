@@ -1,0 +1,170 @@
+.dq-wrap {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+.dq-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.dq-progress {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.dq-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6366f1;
+  background: #ede9fe;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.dq-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.dq-desc {
+  font-size: 13px;
+  color: #555;
+}
+
+.dq-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.dq-block {}
+
+.dq-question {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  color: #111;
+}
+
+.dq-options {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.dq-option {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s, box-shadow 0.12s;
+}
+
+.dq-option:hover {
+  border-color: #a5b4fc;
+  background: #f8f7ff;
+}
+
+.dq-selected {
+  border-color: #4f46e5 !important;
+  background: #eef2ff !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+.dq-selected .dq-opt-label {
+  color: #3730a3;
+}
+
+.dq-selected .dq-opt-desc {
+  color: #4338ca;
+}
+
+.dq-opt-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1d1d1f;
+}
+
+.dq-opt-desc {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.dq-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.75rem;
+}
+
+.dq-btn {
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.12s;
+}
+
+.dq-btn:hover { background: #f5f5f5; }
+
+.dq-next {
+  background: #1d1d1f;
+  color: #fff;
+  border-color: #1d1d1f;
+}
+
+.dq-next:hover { background: #333; }
+
+.dq-next:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.dq-back { color: #555; }
+
+.dq-instructions {
+  padding: 12px 16px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  border-left: 4px solid #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+.dq-instructions-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4f46e5;
+  margin: 0 0 4px;
+}
+
+.dq-instructions-body {
+  font-size: 13px;
+  color: #444;
+  margin: 0;
+  line-height: 1.5;
+}

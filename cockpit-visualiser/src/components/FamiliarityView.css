@@ -1,0 +1,6 @@
+.fam-table-card { overflow-x: auto; }
+.fam-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.fam-table th { text-align: left; padding: 8px 12px; color: #6b7280; font-weight: 600; border-bottom: 1px solid #2a2d3a; white-space: nowrap; }
+.fam-table td { padding: 8px 12px; color: #9ca3af; border-bottom: 1px solid #1e2130; }
+.fam-table tr:last-child td { border-bottom: none; }
+.fam-table tr:hover td { background: #1e2130; }

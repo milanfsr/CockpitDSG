@@ -1,0 +1,21 @@
+.hm-top { display: grid; grid-template-columns: 280px 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+.hm-controls { display: flex; flex-direction: column; gap: 8px; }
+.hm-select-label { font-size: 13px; color: #9ca3af; }
+.hm-controls select { width: 100%; }
+.hm-flex-bars { display: flex; flex-direction: column; gap: 8px; }
+.hm-flex-row { display: flex; align-items: center; gap: 10px; }
+.hm-flex-label { width: 80px; flex-shrink: 0; font-size: 13px; color: #9ca3af; }
+.hm-flex-bar-wrap { flex: 1; height: 10px; background: #0f1117; border-radius: 5px; overflow: hidden; }
+.hm-flex-bar { height: 100%; border-radius: 5px; transition: width 0.4s ease; }
+.hm-flex-pct { width: 80px; text-align: right; font-size: 12px; font-weight: 600; }
+.hm-respondents { font-size: 12px; color: #6b7280; margin-top: 8px; }
+.hm-main { display: grid; grid-template-columns: 1fr 300px; gap: 1.5rem; align-items: start; }
+.hm-svg-card { display: flex; flex-direction: column; }
+.hm-legend { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.hm-gradient { flex: 1; height: 8px; border-radius: 4px; background: linear-gradient(to right, rgba(79,70,229,0.1), rgba(99,102,241,0.9)); }
+.hm-svg-container { width: 100%; aspect-ratio: 4/3; }
+.hm-svg-container svg { width: 100%; height: 100%; }
+.hm-hint { font-size: 11px; color: #4b5563; text-align: center; margin-top: 8px; }
+.hm-zone-detail { }
+.hm-zone-count { font-size: 13px; color: #9ca3af; margin-bottom: 1rem; }
+.hm-zone-bars { display: flex; flex-direction: column; gap: 10px; }

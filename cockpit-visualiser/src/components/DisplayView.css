@@ -1,0 +1,7 @@
+.dv-controls { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.dv-respondents { font-size: 13px; color: #6b7280; }
+.dv-q-card { }
+.dv-bars { display: flex; flex-direction: column; gap: 8px; }
+.dv-empty { font-size: 13px; color: #4b5563; }
+.dv-legend { display: flex; gap: 16px; margin-top: 1rem; font-size: 12px; color: #9ca3af; }
+.dv-legend-item { display: flex; align-items: center; }
